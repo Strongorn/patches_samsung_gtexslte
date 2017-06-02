@@ -21,4 +21,6 @@ adb push libicuoc.so /system/lib/             # ICU56 compiled with missing ICU5
 adb push libwrappergps.so /system/lib/        # Missing in LineageOS 14.1
 
 # Only for May release, but won't hurt previous versions
-adb push gnss_cfg.xml /system/etc             # Missing GNSS config for gps.default.so in May LOS14 release
+adb push gnss_cfg.xml /system/etc             # Missing GNSS config for gps.default.so
+adb push HARRIER_ASIC_PATCH.bin /system/etc   # Missing RAM patch for device drivers
+
