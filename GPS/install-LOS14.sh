@@ -19,3 +19,6 @@ adb push libool.so /system/lib/               # Renamed OpenSSL (libssl.so)
 adb push libcrptoo.so /system/lib/            # Renamed OpenSSL (libcrypto.so)
 adb push libicuoc.so /system/lib/             # ICU56 compiled with missing ICU51 symbols and renamed to work under CM13.
 adb push libwrappergps.so /system/lib/        # Missing in LineageOS 14.1
+
+# Only for May release, but won't hurt previous versions
+adb push gnss_cfg.xml /system/etc             # Missing GNSS config for gps.default.so in May LOS14 release
